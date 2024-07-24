@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="com.ibm.rational.test.common.editor.framework.SearchPage">
+		<item key="srch.label.case.default" value="false"/>
+		<item key="srch.label.limit.default" value="false"/>
+		<item key="srch.label.recursive.default" value="true"/>
+		<item key="srch.label.regex.default" value="false"/>
+		<item key="srch.label.select.default" value="false"/>
+	</section>
+	<section name="EDITOR_STATE">
+		<section name="editor-A1EF498CEB56FB50D60BE13939613435">
+			<item key="file" value="L/PerfTestProject/Tests/PerfTestCase.testsuite"/>
+			<item key="lastEditorViewMode" value="0"/>
+			<list key="lastselection">
+				<item value="A1EF498CEB56FB50D60BE13939613435"/>
+			</list>
+		</section>
+		<section name="editor-A1EF498D321A1040D60BE13939613435">
+			<item key="file" value="L/PerfTestProject/Schedules/VUSchedulePerformance.testsuite"/>
+			<item key="lastEditorViewMode" value="0"/>
+			<list key="lastselection">
+				<item value="A1EF498D321A1040D60BE13939613435"/>
+			</list>
+		</section>
+	</section>
+	<section name="last.test.options.tab">
+		<section name="editor-A1EF498CEB56FB50D60BE13939613435">
+		</section>
+		<section name="editor-A1EF498D321A1040D60BE13939613435">
+		</section>
+	</section>
+	<section name="CEF_NewWizard">
+	</section>
+	<section name="sync-points">
+		<item key="size" value="0"/>
+	</section>
+</section>

@@ -1,0 +1,120 @@
+name: PerfTestProject
+version: 2
+projectReferences: 
+resources: 
+  - name: .classpath
+    type: com.ibm.rational.test.lt.classpath
+    dependencies: 
+      - path: /PerfTestProject/src
+        type: javaClasspath
+  - name: 'Compound Tests'
+    resources: 
+  - name: Datasets
+    resources: 
+  - name: 'JMeter Tests'
+    resources: 
+  - name: Locations
+    resources: 
+  - name: Results
+    resources: 
+      - name: PerfTestCase_1721805543948.stats
+        type: com.ibm.rational.test.lt.stats.session
+        properties: 
+          startTime: 1721805543948
+          tags: 
+          testId: A1EF498CEB56FB50D60BE13939613435
+          testName: PerfTestCase
+        dependencies: 
+          - path: /PerfTestProject/Results/PerfTestCase_1721805543948_orch!system.mstats
+            type: statsSessionStore
+          - path: /PerfTestProject/Results/PerfTestCase_1721805543948_orch!system.rstats
+            type: statsSessionStore
+          - path: /PerfTestProject/Results/PerfTestCase_1721805543948_perf!localhost.mstats
+            type: statsSessionStore
+          - path: /PerfTestProject/Results/PerfTestCase_1721805543948_perf!localhost.rstats
+            type: statsSessionStore
+          - path: /PerfTestProject/Results/PerfTestCase_1721805545217.executiondlr
+            type: statsSessionAsset
+          - path: /PerfTestProject/Tests/PerfTestCase.testsuite
+            type: statsSessionTest
+      - name: PerfTestCase_1721805543948_orch!system.mstats
+      - name: PerfTestCase_1721805543948_orch!system.rstats
+        type: com.ibm.rational.test.lt.stats.raw
+      - name: PerfTestCase_1721805543948_perf!localhost.mstats
+      - name: PerfTestCase_1721805543948_perf!localhost.rstats
+        type: com.ibm.rational.test.lt.stats.raw
+      - name: PerfTestCase_1721805545217.executiondlr
+      - name: VUSchedulePerformance_1721805645391.stats
+        type: com.ibm.rational.test.lt.stats.session
+        properties: 
+          startTime: 1721805645391
+          tags: 
+          testId: A1EF498D321A1040D60BE13939613435
+          testName: VUSchedulePerformance
+        dependencies: 
+          - path: /PerfTestProject/Results/VUSchedulePerformance_1721805645391_orch!system.mstats
+            type: statsSessionStore
+          - path: /PerfTestProject/Results/VUSchedulePerformance_1721805645391_orch!system.rstats
+            type: statsSessionStore
+          - path: /PerfTestProject/Results/VUSchedulePerformance_1721805645391_perf!localhost.mstats
+            type: statsSessionStore
+          - path: /PerfTestProject/Results/VUSchedulePerformance_1721805645391_perf!localhost.rstats
+            type: statsSessionStore
+          - path: /PerfTestProject/Results/VUSchedulePerformance_1721805654810.executiondlr
+            type: statsSessionAsset
+          - path: /PerfTestProject/Schedules/VUSchedulePerformance.testsuite
+            type: statsSessionTest
+      - name: VUSchedulePerformance_1721805645391_orch!system.mstats
+      - name: VUSchedulePerformance_1721805645391_orch!system.rstats
+        type: com.ibm.rational.test.lt.stats.raw
+      - name: VUSchedulePerformance_1721805645391_perf!localhost.mstats
+      - name: VUSchedulePerformance_1721805645391_perf!localhost.rstats
+        type: com.ibm.rational.test.lt.stats.raw
+      - name: VUSchedulePerformance_1721805654810.executiondlr
+  - name: Schedules
+    resources: 
+      - name: VUSchedulePerformance.testsuite
+        type: com.ibm.rational.test.lt.schedule
+        version: 11.0.2.0
+        properties: 
+          description: 'Stages:
+
+	users=5; duration=Run Until Finished
+
+User Group 1: Group Size 100.0 percent
+
+	Test(s): PerfTestCase
+
+'
+          name: VUSchedulePerformance
+          type: com.ibm.rational.test.common.schedule.Schedule
+          uid: A1EF498D321A1040D60BE13939613435
+        dependencies: 
+          - path: /PerfTestProject/Tests/PerfTestCase.testsuite
+            type: scheduleInvokedTest
+  - name: Tests
+    resources: 
+      - name: PerfTestCase.recdata
+      - name: PerfTestCase.recsession
+        type: com.ibm.rational.test.lt.recsession
+        dependencies: 
+          - path: /PerfTestProject/Tests/PerfTestCase.recdata
+            type: recsessionRecdata
+      - name: PerfTestCase.testsuite
+        type: com.ibm.rational.test.lt.test
+        version: 11.0.2.0
+        properties: 
+          features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.http'
+          type: com.ibm.rational.test.lt.lttest
+          uid: A1EF498CEB56FB50D60BE13939613435
+        dependencies: 
+          - path: /PerfTestProject/Tests/PerfTestCase.recsession
+            type: testRecsession
+  - name: src
+    resources: 
+      - name: test
+        resources: 
+          - name: PerfTestCase_Test_A1EF498CEB56FB50D60BE13939613435.java
+            type: com.ibm.rational.test.lt.generatedCode
+          - name: VUSchedulePerformance_Schedule_A1EF498D321A1040D60BE13939613435.java
+            type: com.ibm.rational.test.lt.generatedCode
