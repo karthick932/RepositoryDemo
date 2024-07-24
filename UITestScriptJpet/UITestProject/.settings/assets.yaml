@@ -1,0 +1,85 @@
+name: UITestProject
+version: 2
+projectReferences: 
+resources: 
+  - name: .classpath
+    type: com.ibm.rational.test.lt.classpath
+    dependencies: 
+      - path: /UITestProject/src
+        type: javaClasspath
+  - name: 'Compound Tests'
+    resources: 
+  - name: Datasets
+    resources: 
+  - name: 'JMeter Tests'
+    resources: 
+  - name: Locations
+    resources: 
+  - name: Results
+    resources: 
+      - name: UITestCaseJpet_1721824149050.stats
+        type: com.ibm.rational.test.lt.stats.session
+        properties: 
+          startTime: 1721824149050
+          tags: 
+          testId: A1EF49B83826C610E5BEB23536653830
+          testName: UITestCaseJpet
+        dependencies: 
+          - path: /UITestProject/Results/UITestCaseJpet_1721824149050.xmoebreport
+            type: statsSessionAsset
+          - path: /UITestProject/Results/UITestCaseJpet_1721824149050_orch!system.mstats
+            type: statsSessionStore
+          - path: /UITestProject/Results/UITestCaseJpet_1721824149050_orch!system.rstats
+            type: statsSessionStore
+          - path: /UITestProject/Results/UITestCaseJpet_1721824149050_perf!localhost.mstats
+            type: statsSessionStore
+          - path: /UITestProject/Results/UITestCaseJpet_1721824149050_perf!localhost.rstats
+            type: statsSessionStore
+          - path: /UITestProject/Results/UITestCaseJpet_1721824150261.executiondlr
+            type: statsSessionAsset
+          - path: /UITestProject/Tests/UITestCaseJpet.testsuite
+            type: statsSessionTest
+      - name: UITestCaseJpet_1721824149050.xmoebreport
+      - name: UITestCaseJpet_1721824149050_orch!system.mstats
+      - name: UITestCaseJpet_1721824149050_orch!system.rstats
+        type: com.ibm.rational.test.lt.stats.raw
+      - name: UITestCaseJpet_1721824149050_perf!localhost.mstats
+      - name: UITestCaseJpet_1721824149050_perf!localhost.rstats
+        type: com.ibm.rational.test.lt.stats.raw
+      - name: UITestCaseJpet_1721824150261.executiondlr
+  - name: Schedules
+    resources: 
+  - name: Tests
+    resources: 
+      - name: UITestCase(2).recdata
+      - name: UITestCase(2).recsession
+        type: com.ibm.rational.test.lt.recsession
+        dependencies: 
+          - path: /UITestProject/Tests/UITestCase(2).recdata
+            type: recsessionRecdata
+      - name: UITestCase.recdata
+      - name: UITestCase.recsession
+        type: com.ibm.rational.test.lt.recsession
+        dependencies: 
+          - path: /UITestProject/Tests/UITestCase.recdata
+            type: recsessionRecdata
+      - name: UITestCaseJpet.testsuite
+        type: com.ibm.rational.test.lt.test
+        version: 11.0.2.0
+        properties: 
+          features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
+          type: com.ibm.rational.test.lt.lttest
+          uid: A1EF49B83826C610E5BEB23536653830
+        dependencies: 
+          - path: /UITestProject/Tests/UITestCase(2).recsession
+            type: testRecsession
+          - path: /UITestProject/pectran_com_5e8.ma
+            type: test#moeb.applicationPackage
+  - name: pectran_com_5e8.ma
+    type: moeb.applicationPackage
+  - name: src
+    resources: 
+      - name: test
+        resources: 
+          - name: UITestCaseJpet_Test_A1EF49B83826C610E5BEB23536653830.java
+            type: com.ibm.rational.test.lt.generatedCode

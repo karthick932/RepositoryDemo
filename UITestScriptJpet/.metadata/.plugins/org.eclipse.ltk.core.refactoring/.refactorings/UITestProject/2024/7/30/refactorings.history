@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;UITestProject/Tests/UITestCase.testsuite&apos; to &apos;UITestCaseJpet.testsuite&apos;" description="Rename resource &apos;UITestCase.testsuite&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Tests/UITestCase.testsuite" name="UITestCaseJpet.testsuite" stamp="1721824119405" updateReferences="true"/>
+</session>
